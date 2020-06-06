@@ -13,6 +13,7 @@
 
 
 #### Pull and Run Docker image
+Run the following commands after installing docker
 ```
 - docker pull lawrecks/contact-api
 - docker build -t lawrecks/contact-api .
