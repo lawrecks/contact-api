@@ -16,7 +16,7 @@
 Run the following commands after installing docker
 ```
 - docker pull lawrecks/contact-api
-- docker build -t lawrecks/contact-api .
+- docker images (to confirm successful pull)
 - docker run -p 5000:5000 -d lawrecks/contact-api
 - docker ps (to view and confirm the running container)
 ```
