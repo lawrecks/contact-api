@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import router from './src/controllers';
 
 dotenv.config();
 
@@ -24,6 +25,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(cors());
+
+router(app);
 
 const server = app.listen(process.env.PORT || 5000, () => {
     console.log(`Success!! app listening on port ${process.env.PORT || 5000}`);
