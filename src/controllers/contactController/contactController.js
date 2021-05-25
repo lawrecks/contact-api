@@ -58,7 +58,6 @@ export default class ContactController {
     static async createContact (req, res) {
             try {
                 const { fname, lname, email, phone } = req.body;   
-                console.log(models);
 
                 const foundContact = await models.Contact.findOne({
                     where : { email }
